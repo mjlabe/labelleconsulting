@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marc LaBelle — AI Infrastructure & Backend Engineering</title>
+  <meta name="description" content="Marc LaBelle — independent staff engineer for AI infrastructure, event-driven ML backends, and production-grade microservices. $150/hr." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container nav-row">
+      <a href="#top" class="brand">
+        <span class="brand-mark">ML</span>
+        <span class="brand-name">Marc LaBelle</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#stack">Stack</a>
+        <a href="#track-record">Track record</a>
+        <a href="#engagement">Engagement</a>
+        <a href="https://www.linkedin.com/in/marc-labelle-codes/" target="_blank" rel="noopener" class="nav-link-ext">LinkedIn ↗</a>
+        <a href="#contact" class="nav-cta">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="pill">
+          <span class="dot"></span> Available for new contracts
+        </div>
+        <h1>
+          AI infrastructure &amp; backend systems,<br />
+          <span class="accent">built for production.</span>
+        </h1>
+        <p class="lede">
+          Independent staff-level engineer focused on event-driven ML backends, inference pipelines,
+          and the supporting infrastructure required to operate AI systems in production. M.S. Physics,
+          15+ years across full-stack, embedded, RF, and safety-critical software. Two issued U.S. patents.
+        </p>
+
+        <div class="cta-row">
+          <a href="#contact" class="btn btn-primary">Start a project</a>
+          <a href="#capabilities" class="btn btn-ghost">See capabilities →</a>
+        </div>
+
+        <div class="rate-card">
+          <div class="rate-card-row">
+            <div>
+              <div class="rate-label">Rate</div>
+              <div class="rate-value">$150<span class="rate-unit">/hr</span></div>
+            </div>
+            <div class="rate-divider"></div>
+            <div>
+              <div class="rate-label">Engagement</div>
+              <div class="rate-sub">Hourly · Project · Fractional staff</div>
+            </div>
+            <div class="rate-divider"></div>
+            <div>
+              <div class="rate-label">Location</div>
+              <div class="rate-sub">Remote · US-based</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPABILITIES -->
+    <section id="capabilities" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">// capabilities</div>
+          <h2>What I build for clients</h2>
+          <p class="section-sub">
+            Focused on AI infrastructure: the systems that move data into models, models into production,
+            and predictions back into your business.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h18M3 12h18M3 17h18"/><circle cx="7" cy="7" r="1.5" fill="currentColor"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/><circle cx="17" cy="17" r="1.5" fill="currentColor"/></svg>
+            </div>
+            <h3>Event-Driven ML Backends</h3>
+            <p>
+              Architect and ship Kafka-based inference pipelines that route streaming events to the right
+              model at the right time. Built one in production running multiple models against combined
+              event streams.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><circle cx="7" cy="7" r="1" fill="currentColor"/><circle cx="7" cy="17" r="1" fill="currentColor"/></svg>
+            </div>
+            <h3>Inference APIs &amp; Microservices</h3>
+            <p>
+              Production microservices in Django and FastAPI exposing REST and gRPC interfaces, backed by
+              Postgres, MySQL, and Redis and integrated with Kafka. Designed, owned, and operated multiple
+              services in a high-throughput marketplace environment.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg>
+            </div>
+            <h3>Containerization &amp; CI/CD</h3>
+            <p>
+              Docker, Kubernetes, Helm charts, and Jenkins. Reproducible builds and reliable rollouts for
+              services where regressions carry real cost.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg>
+            </div>
+            <h3>Embedded ML &amp; Computer Vision</h3>
+            <p>
+              On-device computer vision with OpenCV and embedded data loggers feeding ML models. Built a
+              sensor pipeline that delivered approximately $1M/yr in savings by predicting vehicle issues
+              from audio and sensor data.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5M4 19h16M8 15V9M12 15v-8M16 15v-4"/></svg>
+            </div>
+            <h3>Data Migration &amp; Modernization</h3>
+            <p>
+              Legacy SQL Server to MySQL/Postgres APIs. Stored procedure logic translated into well-tested
+              service code that integrates cleanly with mobile and web clients.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg>
+            </div>
+            <h3>Test Automation &amp; Verification</h3>
+            <p>
+              Over a decade designing automated test systems for safety-critical hardware: RF signals,
+              serial protocols, timing, and acceptance review of contractor deliverables.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h14v16H5z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
+            </div>
+            <h3>Technical Writing &amp; Proposals</h3>
+            <p>
+              Software and test requirements documents, technical proposals, contractor deliverable
+              specifications. Strong written communication is part of the deliverable.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.2"/><path d="M3 20c0-3 2.7-5 6-5s6 2 6 5M14 20c0-2 1.8-3.5 4-3.5s4 1.5 4 3.5"/></svg>
+            </div>
+            <h3>Technical Leadership &amp; Mentoring</h3>
+            <p>
+              Led backend and iOS teams, including contractors. Effective as architect, scrum master, or
+              senior individual contributor depending on the engagement.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">// stack</div>
+          <h2>Tools I reach for</h2>
+        </div>
+
+        <div class="stack-grid">
+          <div class="stack-col">
+            <h4>Languages</h4>
+            <ul class="tags">
+              <li>Python</li><li>TypeScript</li><li>C / C++</li><li>Swift</li><li>SQL</li>
+            </ul>
+          </div>
+          <div class="stack-col">
+            <h4>Backend &amp; APIs</h4>
+            <ul class="tags">
+              <li>FastAPI</li><li>Django</li><li>REST</li><li>gRPC</li><li>Postgres</li><li>MySQL</li><li>Redis</li>
+            </ul>
+          </div>
+          <div class="stack-col">
+            <h4>AI Infra &amp; Streaming</h4>
+            <ul class="tags">
+              <li>Kafka integration</li><li>Event-driven pipelines</li><li>Inference orchestration</li><li>OpenCV</li>
+            </ul>
+          </div>
+          <div class="stack-col">
+            <h4>Platform &amp; DevOps</h4>
+            <ul class="tags">
+              <li>Docker</li><li>Kubernetes</li><li>Helm</li><li>Jenkins</li><li>Linux</li><li>Apache</li>
+            </ul>
+          </div>
+          <div class="stack-col">
+            <h4>Embedded &amp; RF</h4>
+            <ul class="tags">
+              <li>PIC / Atmel / Arduino</li><li>TCP / UDP / XML</li><li>Serial protocols</li><li>RF test</li><li>Data logging</li>
+            </ul>
+          </div>
+          <div class="stack-col">
+            <h4>Modeling &amp; Analysis</h4>
+            <ul class="tags">
+              <li>COMSOL Multiphysics</li><li>CTH</li><li>D3</li><li>Static &amp; dynamic binary analysis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRACK RECORD -->
+    <section id="track-record" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">// track record</div>
+          <h2>What that's looked like in practice</h2>
+          <p class="section-sub">
+            A few representative outcomes from prior work — commercial AI, defense R&amp;D, and safety-critical systems.
+          </p>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num">~$1M<span>/yr</span></div>
+            <div class="stat-label">Savings from an embedded audio &amp; sensor pipeline feeding ML models in production.</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">2</div>
+            <div class="stat-label">Issued U.S. patents covering multi-sensor evaluation systems and shaped-charge designs.</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">15+<span>yrs</span></div>
+            <div class="stat-label">Shipping production software across full-stack, embedded, RF, and safety-critical domains.</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">50%</div>
+            <div class="stat-label">Reduction in workflow turn-around time on automation projects I led.</div>
+          </div>
+        </div>
+
+        <div class="highlights">
+          <div class="highlight">
+            <h4>Event-driven ML inference</h4>
+            <p>Designed and operated backends that integrate with Kafka to fan combined event streams into multiple inference models, with attention to throughput, ordering, and failure modes.</p>
+          </div>
+          <div class="highlight">
+            <h4>Production API services</h4>
+            <p>Multiple production services in Django and FastAPI on Postgres and MySQL, containerized with Docker and released through Kubernetes, Helm, and Jenkins CI/CD.</p>
+          </div>
+          <div class="highlight">
+            <h4>Embedded computer vision and sensor pipelines</h4>
+            <p>iOS and embedded computer vision with OpenCV, alongside an embedded data logger whose output served as the training and inference substrate for downstream ML models.</p>
+          </div>
+          <div class="highlight">
+            <h4>Legacy data modernization</h4>
+            <p>Converted a SQL Server database and stored-procedure logic into a MySQL-backed API integrated with mobile clients, reducing downstream disputes.</p>
+          </div>
+          <div class="highlight">
+            <h4>Safety-critical verification</h4>
+            <p>Static and dynamic binary analysis of embedded devices to identify defects and verify program and data flow, supported by automated RF, serial, and timing test systems for fielded hardware.</p>
+          </div>
+          <div class="highlight">
+            <h4>Technical leadership</h4>
+            <p>Led and mentored backend and iOS engineers, including contractors. Engagements scoped as architect, scrum master, or senior individual contributor as required.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGAGEMENT -->
+    <section id="engagement" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">// engagement</div>
+          <h2>How we can work together</h2>
+        </div>
+
+        <div class="engage-grid">
+          <div class="engage-card">
+            <div class="engage-tag">Hourly</div>
+            <div class="engage-rate">$150<span>/hr</span></div>
+            <p>Targeted engagements such as ML pipeline design review, infrastructure debugging, performance analysis, or a focused build.</p>
+          </div>
+          <div class="engage-card engage-card-feature">
+            <div class="engage-tag">Project</div>
+            <div class="engage-rate">Scoped<span>SOW</span></div>
+            <p>Fixed-scope delivery against defined acceptance criteria — for example, a streaming inference service, a data migration, or a test harness.</p>
+          </div>
+          <div class="engage-card">
+            <div class="engage-tag">Fractional Staff</div>
+            <div class="engage-rate">Retainer<span>monthly</span></div>
+            <p>Ongoing staff-level capacity for teams that require senior infrastructure and AI judgment without a full-time hire.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <div class="container contact-inner">
+        <div class="kicker">// contact</div>
+        <h2>Start a conversation</h2>
+        <p class="section-sub">
+          Share a brief description of what you are building, where it is stuck, and your timeline.
+          Replies within one business day.
+        </p>
+        <div class="contact-ctas">
+          <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/marc-labelle-codes/" target="_blank" rel="noopener">
+            Message on LinkedIn ↗
+          </a>
+          <a class="btn btn-ghost btn-lg" href="mailto:marc@labelleconsulting.com?subject=Contract%20engineering%20inquiry">
+            marc@labelleconsulting.com
+          </a>
+        </div>
+        <div class="contact-meta">
+          <span>Remote · US-based</span>
+          <span class="dotsep">·</span>
+          <span>NDAs welcome</span>
+          <span class="dotsep">·</span>
+          <span>W-9 / 1099</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> Marc LaBelle</div>
+      <div class="mono small">Available for new contract engagements</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
