@@ -17,11 +17,15 @@ aesthetic. Rate: **$150-200/hr**.
   muted teal availability indicator. Deliberately avoids violet/indigo "AI"
   styling.
 - **Type:** Inter for prose, JetBrains Mono for kickers / tags / rate values.
-- **No resume on the page.** Describe capabilities and outcomes, not employers,
-  dates, or job titles. Track-record section uses anonymized stats and
-  highlight blurbs instead of a timeline.
-- **Tone:** professional and restrained. Casual or jokey copy has been removed
-  ("drop-in help", "on fire", "built for production · not a demo", etc.).
+- **No resume on the page.** The site is framed as *what Marc can and will do
+  for the client*, not as a record of where he has worked. Capabilities are
+  written as services delivered; prior experience appears only as anonymized
+  outcomes (stats, capability blurbs) — never as employers, dates, or job
+  titles, and never as a career timeline.
+- **Tone:** professional and restrained, customer-forward. Present/future-tense
+  action verbs ("build", "design", "operate", "deliver") preferred over
+  past-tense biography. Casual or jokey copy has been removed ("drop-in help",
+  "on fire", "built for production · not a demo", etc.).
 - **Technology accuracy:** only list tech Marc has actually used. Go was
   removed; gRPC and Redis are kept. Kafka phrasing reflects integration with
   an existing platform rather than standing one up.
@@ -31,16 +35,19 @@ aesthetic. Rate: **$150-200/hr**.
 ## Current sections
 
 1. **Hero** — positioning, availability pill, headline, lede, CTAs, rate card.
-2. **Capabilities** — eight service cards covering event-driven ML backends,
-   inference APIs/microservices, containerization & CI/CD, embedded ML & CV,
-   data migration, test automation, technical writing, technical leadership.
+2. **Capabilities** — *what Marc builds for clients*. Single combined section:
+   four-stat outcome strip (`~$1M/yr`, `2` patents, `15+ yrs`, `50%`) sits
+   directly under the section intro as proof-points, followed by eight service
+   cards (event-driven ML backends, inference APIs/microservices,
+   containerization & CI/CD, embedded ML & CV, data migration, test
+   automation, technical writing, technical leadership). The previous separate
+   "Track record" section has been merged in here so the page reads as one
+   continuous client-services pitch instead of capabilities + resume.
 3. **Stack** — tag groups: Languages / Backend & APIs / AI Infra & Streaming /
    Platform & DevOps / Embedded & RF / Modeling & Analysis.
-4. **Track record** — four-stat strip (`~$1M/yr`, `2` patents, `15+ yrs`,
-   `50%`) followed by six qualitative highlight blurbs.
-5. **Engagement** — Hourly ($150-200/hr), Project (scoped SOW), Fractional Staff
-   (monthly retainer).
-6. **Contact** — LinkedIn + email CTAs, plus `Remote · US-based`,
+4. **Engagement** — Hourly ($150-200/hr), Project (scoped SOW), Fractional
+   Staff (monthly retainer).
+5. **Contact** — LinkedIn + email CTAs, plus `Remote · US-based`,
    `NDAs welcome`, `W-9 / 1099`.
 
 ## Open questions / candidate next steps
@@ -65,5 +72,8 @@ aesthetic. Rate: **$150-200/hr**.
 
 - Becoming a CMS or blog.
 - Listing employers, dates, or job titles.
+- Reading like a resume or CV. The page is a services pitch, not a career
+  history; if a paragraph answers "what has Marc done?" instead of "what does
+  the client get?", rewrite it.
 - Mimicking generative-AI product styling (purple gradients, neon, etc.).
 - Adding a JS framework or build pipeline.

@@ -9,20 +9,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" type="image/svg+xml" href="./logo.svg" />
 </head>
 <body>
   <div class="grid-bg" aria-hidden="true"></div>
 
   <header class="nav">
     <div class="container nav-row">
-      <a href="#top" class="brand">
-        <span class="brand-mark">ML</span>
+      <a href="#top" class="brand" aria-label="Marc LaBelle — home">
+        <img class="brand-mark" src="./logo.svg" alt="" width="32" height="32" />
         <span class="brand-name">Marc LaBelle</span>
       </a>
       <nav class="nav-links">
         <a href="#capabilities">Capabilities</a>
         <a href="#stack">Stack</a>
-        <a href="#track-record">Track record</a>
         <a href="#engagement">Engagement</a>
         <a href="https://www.linkedin.com/in/marc-labelle-codes/" target="_blank" rel="noopener" class="nav-link-ext">LinkedIn ↗</a>
         <a href="#contact" class="nav-cta">Get in touch</a>
@@ -81,8 +81,28 @@
           <h2>What I build for clients</h2>
           <p class="section-sub">
             Focused on AI infrastructure: the systems that move data into models, models into production,
-            and predictions back into your business.
+            and predictions back into your business. A few representative outcomes from prior work
+            across commercial AI, defense R&amp;D, and safety-critical systems.
           </p>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num">~$1M<span>/yr</span></div>
+            <div class="stat-label">Savings using pipelines to feed ML models in production.</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">2</div>
+            <div class="stat-label">Issued U.S. patents covering multi-sensor evaluation systems and shaped-charge designs.</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">15+<span>yrs</span></div>
+            <div class="stat-label">Shipping production software across full-stack, embedded, RF, and safety-critical domains.</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">50%</div>
+            <div class="stat-label">Reduction in workflow turn-around time on automation projects.</div>
+          </div>
         </div>
 
         <div class="cards">
@@ -93,8 +113,8 @@
             <h3>Event-Driven ML Backends</h3>
             <p>
               Architect and ship Kafka-based inference pipelines that route streaming events to the right
-              model at the right time. Built one in production running multiple models against combined
-              event streams.
+              model at the right time; fanning combined event streams out to multiple models with
+              attention to throughput, ordering, and failure modes.
             </p>
           </article>
 
@@ -104,9 +124,8 @@
             </div>
             <h3>Inference APIs &amp; Microservices</h3>
             <p>
-              Production microservices in Django and FastAPI exposing REST and gRPC interfaces, backed by
-              Postgres, MySQL, and Redis and integrated with Kafka. Designed, owned, and operated multiple
-              services in a high-throughput marketplace environment.
+              Production microservices in FastAPI and Django exposing REST and gRPC interfaces, backed by
+              Postgres, MySQL, and Redis, and integrated with Kafka.
             </p>
           </article>
 
@@ -127,9 +146,8 @@
             </div>
             <h3>Embedded ML &amp; Computer Vision</h3>
             <p>
-              On-device computer vision with OpenCV and embedded data loggers feeding ML models. Built a
-              sensor pipeline that delivered approximately $1M/yr in savings by predicting vehicle issues
-              from audio and sensor data.
+              On-device computer vision with OpenCV, embedded data collection, and sensor fusion feeding
+              ML models &mdash; a proven pattern that saved $1M/yr via model inference detecting issues before they became costly.
             </p>
           </article>
 
@@ -150,8 +168,9 @@
             </div>
             <h3>Test Automation &amp; Verification</h3>
             <p>
-              Over a decade designing automated test systems for safety-critical hardware: RF signals,
-              serial protocols, timing, and acceptance review of contractor deliverables.
+              Design and build automated testing pipelines and verification systems for software and
+              safety-critical hardware: CI-integrated test suites, RF signals, serial protocols, timing,
+              and acceptance review of contractor deliverables.
             </p>
           </article>
 
@@ -172,8 +191,9 @@
             </div>
             <h3>Technical Leadership &amp; Mentoring</h3>
             <p>
-              Led backend and iOS teams, including contractors. Effective as architect, scrum master, or
-              senior individual contributor depending on the engagement.
+              Lead and mentor backend and mobile engineers, including outside contractors. Slot in as
+              architect, scrum master, or senior individual contributor &mdash; whichever shape the
+              engagement needs.
             </p>
           </article>
         </div>
@@ -229,67 +249,8 @@
       </div>
     </section>
 
-    <!-- TRACK RECORD -->
-    <section id="track-record" class="section">
-      <div class="container">
-        <div class="section-head">
-          <div class="kicker">// track record</div>
-          <h2>What that's looked like in practice</h2>
-          <p class="section-sub">
-            A few representative outcomes from prior work — commercial AI, defense R&amp;D, and safety-critical systems.
-          </p>
-        </div>
-
-        <div class="stats">
-          <div class="stat">
-            <div class="stat-num">~$1M<span>/yr</span></div>
-            <div class="stat-label">Savings using pipelines to feed ML models in production.</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">2</div>
-            <div class="stat-label">Issued U.S. patents covering multi-sensor evaluation systems and shaped-charge designs.</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">15+<span>yrs</span></div>
-            <div class="stat-label">Shipping production software across full-stack, embedded, RF, and safety-critical domains.</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">50%</div>
-            <div class="stat-label">Reduction in workflow turn-around time on automation projects.</div>
-          </div>
-        </div>
-
-        <div class="highlights">
-          <div class="highlight">
-            <h4>Event-driven ML inference</h4>
-            <p>Designed and operated backends that integrate with Kafka to fan out combined event streams into multiple inference models, with attention to throughput, ordering, and failure modes.</p>
-          </div>
-          <div class="highlight">
-            <h4>Production API services</h4>
-            <p>Multiple production services in FastAPI and Django with Postgres and MySQL, containerized with Docker and released through Kubernetes, Helm, and Jenkins CI/CD.</p>
-          </div>
-          <div class="highlight">
-            <h4>Embedded computer vision and sensor pipelines</h4>
-            <p>iOS and embedded computer vision with OpenCV, alongside an embedded data collection used for sensor fusion and training/inference for downstream ML models.</p>
-          </div>
-          <div class="highlight">
-            <h4>Legacy data modernization</h4>
-            <p>Migrate legacy databases and stored-procedure logic into modern API-backed services, preserving business rules while making data accessible to mobile and web clients.</p>
-          </div>
-          <div class="highlight">
-            <h4>Safety-critical verification</h4>
-            <p>Static and dynamic binary analysis of embedded devices to identify defects and verify program and data flow, supported by automated RF, serial, and timing test systems for fielded hardware.</p>
-          </div>
-          <div class="highlight">
-            <h4>Technical leadership</h4>
-            <p>Led and mentored backend and iOS engineers, including contractors. Engagements scoped as architect, scrum master, or senior individual contributor as required.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ENGAGEMENT -->
-    <section id="engagement" class="section section-alt">
+    <section id="engagement" class="section">
       <div class="container">
         <div class="section-head">
           <div class="kicker">// engagement</div>
@@ -300,7 +261,7 @@
           <div class="engage-card">
             <div class="engage-tag">Hourly</div>
             <div class="engage-rate">$150<span>/hr</span></div>
-            <p>Targeted engagements such as ML pipeline design review, infrastructure debugging, performance analysis, or a focused build.</p>
+            <p>Targeted engagements such as test automation, ML pipeline design review, infrastructure debugging, performance analysis, or a focused build.</p>
           </div>
           <div class="engage-card engage-card-feature">
             <div class="engage-tag">Project</div>

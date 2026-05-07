@@ -26,15 +26,23 @@ backends, and production microservices. Contract rate is **$150-200/hr**, depend
 - Texture is restrained: subtle dotted/grid background, hairline borders, flat
   cards. No gradients, no glow effects.
 
-## Tone
+## Tone & framing
 
 - **Professional, factual, restrained.** No casual idioms, no jokes, no
   marketing hyperbole. Avoid phrases like "drop-in help", "on fire", "what your
   team actually needs", "built for production · not a demo", etc.
+- **Customer-forward, not resume-style.** The site must read as *what Marc can
+  and will do for the client*, not as a record of where he has worked. Frame
+  every section in terms of services delivered and outcomes the client gets.
+  - Prefer present/future-tense action verbs ("build", "design", "operate",
+    "deliver") over past-tense biography ("led", "worked at", "was responsible
+    for").
+  - Prior experience is supporting evidence for capability claims, not the
+    subject of the page. Reference it as anonymized outcomes (e.g. `~$1M/yr
+    savings`), never as employers, dates, or job titles.
+  - No timelines, no career narrative, no "about me" section.
 - Prefer concrete claims grounded in Marc's actual experience over generic
   superlatives.
-- Marc explicitly does **not** want his resume on the site. Describe
-  capabilities and outcomes, not employers, dates, or job titles.
 
 ## Ground truth for technology claims
 
@@ -72,5 +80,8 @@ LLM tooling, framework, or cloud provider not listed above.
   explicitly requested.
 - Do not add comments to `index.html` or `styles.css` beyond the section
   delimiters already present.
-- Preserve the section order: Hero → Capabilities → Stack → Track record →
-  Engagement → Contact.
+- Preserve the section order: Hero → Capabilities → Stack → Engagement →
+  Contact. Capabilities is a single combined section that includes the
+  outcome stats; there is no separate "Track record" section.
+- When editing copy, sanity-check that each paragraph answers "what does the
+  client get?" and not "what has Marc done in his career?"
