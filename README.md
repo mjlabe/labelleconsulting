@@ -1,8 +1,8 @@
 # Marc LaBelle — Contract Engineering Site
 
 Single-page marketing site presenting independent contract engineering services
-focused on AI infrastructure, event-driven ML backends, and production-grade
-microservices.
+focused on backend engineering for AI applications, production ML systems,
+event-driven integrations, and microservices.
 
 ## Stack
 
@@ -13,7 +13,7 @@ Plain static site — no build step, no framework.
 - Fonts: Inter and JetBrains Mono via Google Fonts
 
 The palette deliberately avoids the violet/indigo "AI" aesthetic in favor of a
-slate ink with a warm amber accent, intended to read as engineering/infrastructure
+slate ink with a warm amber accent, intended to read as backend engineering
 tooling.
 
 ## Local development

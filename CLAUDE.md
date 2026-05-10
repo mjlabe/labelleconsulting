@@ -1,87 +1,59 @@
 # CLAUDE.md
 
-Guidance for AI coding assistants working on this repository.
+Prompt and constraint guidance for AI coding assistants working on this repository.
 
-## Project
+## What this is
 
-Single-page marketing site for **Marc LaBelle**, an independent contract
-engineer. Positions services around **AI infrastructure**, event-driven ML
-backends, and production microservices. Contract rate is **$150-200/hr**, depending on scope of work.
+Contract engineering site for Marc LaBelle. Static HTML/CSS only. See `plan.md` for decisions and next steps.
 
-## Stack
+## Positioning rules
 
-- Plain static HTML + CSS. No framework, no build step.
-- `index.html` and `styles.css` only. Fonts loaded from Google Fonts (Inter,
-  JetBrains Mono).
-- Local preview: `python3 -m http.server 5173`.
+**You must position Marc as:** backend engineer for AI applications, production ML systems.
 
-## Design direction
+**You must NOT position Marc as:** AI infrastructure engineer, platform engineer, DevOps engineer.
 
-- **Avoid the typical "AI" purple/violet/indigo palette.** The current design
-  uses a deep slate ink (`#0e1116`) with a warm amber accent (`#d98a3d`) and a
-  muted teal "available" indicator. It should read as engineering /
-  infrastructure tooling, not as a generative-AI product page.
-- Type pairing: Inter for prose, JetBrains Mono for kickers, tags, rate values,
-  and other "devtools" affordances.
-- Texture is restrained: subtle dotted/grid background, hairline borders, flat
-  cards. No gradients, no glow effects.
+**Terminology:**
+- Spell out "Machine Learning" in headlines and titles
+- Use "AI systems/applications" for broader domain context
+- Use "ML" for models/inference in body copy and tags
+- Example: "backend services for AI applications" + "ML inference APIs"
 
-## Tone & framing
+## Content rules
 
-- **Professional, factual, restrained.** No casual idioms, no jokes, no
-  marketing hyperbole. Avoid phrases like "drop-in help", "on fire", "what your
-  team actually needs", "built for production · not a demo", etc.
-- **Customer-forward, not resume-style.** The site must read as *what Marc can
-  and will do for the client*, not as a record of where he has worked. Frame
-  every section in terms of services delivered and outcomes the client gets.
-  - Prefer present/future-tense action verbs ("build", "design", "operate",
-    "deliver") over past-tense biography ("led", "worked at", "was responsible
-    for").
-  - Prior experience is supporting evidence for capability claims, not the
-    subject of the page. Reference it as anonymized outcomes (e.g. `~$1M/yr
-    savings`), never as employers, dates, or job titles.
-  - No timelines, no career narrative, no "about me" section.
-- Prefer concrete claims grounded in Marc's actual experience over generic
-  superlatives.
+**Tone:** Professional, factual, restrained. No casual idioms, jokes, or marketing hyperbole.
 
-## Ground truth for technology claims
+**Framing:** Customer-forward, not resume-style.
+- Every paragraph must answer "what does the client get?" not "what has Marc done?"
+- Use present/future-tense action verbs ("build", "design", "operate")
+- Never use past-tense biography ("led", "worked at", "was responsible for")
+- Prior experience = anonymized outcomes only (e.g., `~$1M/yr savings`)
+- Never mention employers, dates, job titles, or career timeline
 
-Only list technologies Marc has actually used. Confirmed:
+**Design constraints:**
+- No purple/violet/indigo "AI" aesthetics
+- No gradients, glow effects, or generative-AI product styling
+- Preserve existing palette: slate ink (`#0e1116`), amber accent (`#d98a3d`)
 
-- **Languages:** Python, TypeScript, C / C++, Swift, SQL
-- **Backend & APIs:** FastAPI, Django, REST, gRPC, Postgres, MySQL, Redis
-- **AI infra & streaming:** Kafka *integration* (the platform was already
-  deployed at his employer; he integrated services with it), event-driven
-  pipelines, inference orchestration, OpenCV
-- **Platform & DevOps:** Docker, Kubernetes, Helm, Jenkins, Linux, Apache
-- **Embedded & RF:** PIC / Atmel / Arduino, TCP / UDP / XML, serial protocols,
-  RF test, data logging
-- **Modeling & analysis:** COMSOL Multiphysics, CTH, D3, static & dynamic
-  binary analysis
+## Technology claims — ground truth only
 
-Things to **not** claim unless Marc confirms: Go, vector stores, any specific
-LLM tooling, framework, or cloud provider not listed above.
+**Only claim technologies Marc has actually used.** See `plan.md` for full list.
 
-## Content invariants
+**Key constraints:**
+- Kafka: integration with existing platform only (not standing up infrastructure)
+- Docker/Kubernetes: application deployment (not infrastructure management)
+- **Never claim:** Go, vector stores, specific LLM tooling, cloud providers not in plan.md
 
-- Hero must include the **$150/hr** rate, an availability indicator, and a
-  primary CTA into contact.
-- Patents are referenced as a count (`2`) in the track-record stats; specific
-  patent numbers are intentionally not displayed on the page.
-- Contact CTAs:
-  - LinkedIn: <https://www.linkedin.com/in/marc-labelle-codes/>
-  - Email: `marc@labelleconsulting.com`
-- Footer line is `Available for new contract engagements`.
+## Required content
 
-## Editing rules
+- **Rate:** $150/hr (displayed in hero)
+- **Contact:** LinkedIn (<https://www.linkedin.com/in/marc-labelle-codes/>) and `marc@labelleconsulting.com`
+- **Patents:** count only (`2`), never patent numbers
+- **Section order:** Hero → Capabilities → Stack → Engagement → Contact
 
-- Keep edits minimal and targeted. Do not refactor working markup.
-- Do not introduce a build system, framework, or package manager unless
-  explicitly requested.
-- Do not add comments to `index.html` or `styles.css` beyond the section
-  delimiters already present.
-- Preserve the section order: Hero → Capabilities → Stack → Engagement →
-  Contact. Capabilities is a single combined section that includes the
-  outcome stats; there is no separate "Track record" section.
-- When editing copy, sanity-check that each paragraph answers "what does the
-  client get?" and not "what has Marc done in his career?"
+## Editing constraints
+
+- **Never** introduce a build system, framework, or package manager
+- **Never** add comments beyond existing section delimiters
+- **Never** refactor working markup
+- Keep edits minimal and targeted
+- Sanity-check: does each paragraph answer "what does the client get?"

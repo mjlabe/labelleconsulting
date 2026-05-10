@@ -6,8 +6,8 @@ candidate next steps.
 ## Goal
 
 A single-page site that lists Marc LaBelle's contract-engineering capabilities,
-focused on **AI infrastructure**, with a professional, non-"AI-purple"
-aesthetic. Rate: **$150-200/hr**.
+focused on **production Machine Learning & backend systems** (backend engineering for AI applications),
+with a professional, non-"AI-purple" aesthetic. Rate: **$150/hr**.
 
 ## Decisions made
 
@@ -29,6 +29,14 @@ aesthetic. Rate: **$150-200/hr**.
 - **Technology accuracy:** only list tech Marc has actually used. Go was
   removed; gRPC and Redis are kept. Kafka phrasing reflects integration with
   an existing platform rather than standing one up.
+- **Positioning:** emphasize production Machine Learning & backend systems —
+  backend engineering for AI applications; not an infrastructure engineer.
+- **Terminology:** spell out "Machine Learning" in headlines/titles; use
+  "AI systems/applications" for broader context and "ML" for models/inference
+  in body copy and tags.
+- **Labels:** in Stack, rename "AI Infra & Streaming" → "Machine Learning & Integration"
+  and "Platform & DevOps" → "Deployment & Operations". Capability card
+  "Containerization & CI/CD" → "Deployment & Continuous Delivery".
 - **Contact:** primary CTA is LinkedIn message; secondary is email
   `marc@labelleconsulting.com`. Both repeated in the contact section.
 
@@ -39,13 +47,13 @@ aesthetic. Rate: **$150-200/hr**.
    four-stat outcome strip (`~$1M/yr`, `2` patents, `15+ yrs`, `50%`) sits
    directly under the section intro as proof-points, followed by eight service
    cards (event-driven ML backends, inference APIs/microservices,
-   containerization & CI/CD, embedded ML & CV, data migration, test
+   deployment & continuous delivery, embedded ML & CV, data migration, test
    automation, technical writing, technical leadership). The previous separate
    "Track record" section has been merged in here so the page reads as one
    continuous client-services pitch instead of capabilities + resume.
-3. **Stack** — tag groups: Languages / Backend & APIs / AI Infra & Streaming /
-   Platform & DevOps / Embedded & RF / Modeling & Analysis.
-4. **Engagement** — Hourly ($150-200/hr), Project (scoped SOW), Fractional
+3. **Stack** — tag groups: Languages / Backend & APIs / Machine Learning & Integration /
+   Deployment & Operations / Embedded & RF / Modeling & Analysis.
+4. **Engagement** — Hourly ($150/hr), Project (scoped SOW), Fractional
    Staff (monthly retainer).
 5. **Contact** — LinkedIn + email CTAs, plus `Remote · US-based`,
    `NDAs welcome`, `W-9 / 1099`.
@@ -54,7 +62,7 @@ aesthetic. Rate: **$150-200/hr**.
 
 - **Domain & hosting.** Pick a host (Netlify, Vercel, Cloudflare Pages,
   GitHub Pages) and wire up the `labelleconsulting.com` domain.
-- **Favicon and OG image.** Currently no favicon or social preview image.
+- **Open Graph image.** Favicon is in place; add a social preview image.
   Suggest a simple monogram (`ML`) on the slate background plus an OG card
   reusing the hero headline.
 - **Analytics.** Decide whether to add a privacy-friendly analytics tag
