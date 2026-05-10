@@ -74,13 +74,17 @@ a:hover { color: var(--accent-soft); }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; flex-shrink: 0; }
 .brand-mark {
   display: block;
-  filter: invert(93%) sepia(6%) saturate(292%) hue-rotate(186deg) brightness(99%) contrast(92%);
-  transition: filter 0.15s ease;
+  width: 20px;
+  height: 20px;
+  background-color: var(--text);
+  -webkit-mask: url('./labelle_logo.svg') no-repeat center / contain;
+  mask: url('./labelle_logo.svg') no-repeat center / contain;
+  transition: background-color 0.15s ease;
 }
 .brand:hover .brand-mark {
-  filter: invert(82%) sepia(29%) saturate(659%) hue-rotate(338deg) brightness(101%) contrast(91%);
+  background-color: var(--accent-soft);
 }
-.brand-name { font-family: var(--mono); font-size: 14px; color: var(--text); }
+.brand-name { font-family: var(--mono); font-size: 14px; color: var(--text); letter-spacing: -0.5px; }
 .nav-links { display: flex; gap: 26px; align-items: center; font-size: 14px; color: var(--text-dim); }
 .nav-links a:hover { color: var(--text); }
 .nav-cta {
