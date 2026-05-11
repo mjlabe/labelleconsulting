@@ -40,6 +40,21 @@
     </div>
   </header>
 
+  <!-- TRUST BAND -->
+  <div class="trust-band">
+    <div class="container trust-band-inner">
+      <span class="trust-item"><strong>15+</strong> years production software</span>
+      <span class="trust-sep">·</span>
+      <span class="trust-item">AI + backend architecture</span>
+      <span class="trust-sep">·</span>
+      <span class="trust-item">Safety-critical & defense</span>
+      <span class="trust-sep">·</span>
+      <span class="trust-item">Two U.S. patents</span>
+      <span class="trust-sep">·</span>
+      <span class="trust-item trust-avail"><span class="trust-dot"></span>Accepting new clients</span>
+    </div>
+  </div>
+
   <main id="top">
     <!-- HERO -->
     <section class="hero">
@@ -52,14 +67,20 @@
           <span class="accent">built for scale.</span>
         </h1>
         <p class="lede">
-          Independent staff-level engineer focused on backend services for AI applications: ML inference APIs,
-          event-driven integrations, and the production engineering required to deploy and operate AI systems at scale.
-          M.S. Physics, 15+ years across full-stack, embedded, RF, and safety-critical software. Two issued U.S. patents.
+          I help teams ship production systems reliably — from inference APIs and event pipelines to embedded Linux and legacy modernization.
+          Staff-level engineer, M.S. Physics, 15+ years across backend, embedded, RF, and safety-critical software. Two issued U.S. patents.
         </p>
 
         <div class="cta-row">
-          <a href="#contact" class="btn btn-primary">Start a project</a>
-          <a href="#capabilities" class="btn btn-ghost">See capabilities →</a>
+          <a href="#contact" class="btn btn-primary">Discuss your project</a>
+          <a href="#case-studies" class="btn btn-ghost">See results →</a>
+        </div>
+
+        <div class="hero-problems">
+          <span class="hero-problem">Production inference systems</span>
+          <span class="hero-problem">Event-driven backends</span>
+          <span class="hero-problem">Embedded Linux</span>
+          <span class="hero-problem">Legacy modernization</span>
         </div>
 
         <div class="rate-card">
@@ -83,8 +104,76 @@
       </div>
     </section>
 
+    <!-- CASE STUDIES -->
+    <section id="case-studies" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">// results</div>
+          <h2>What I've shipped</h2>
+        </div>
+
+        <div class="case-studies">
+          <article class="case-study">
+            <div class="case-study-label">ML Production Architecture</div>
+            <h3>Event-driven ML ingestion pipeline</h3>
+            <p class="case-study-desc">
+              <strong>Problem:</strong> Manual review of incoming data was costing ~$1M/year in labor and missed issues.
+            </p>
+            <p class="case-study-desc">
+              <strong>Solution:</strong> Built Kafka + FastAPI pipeline routing events to ML models for automated classification and anomaly detection.
+            </p>
+            <p class="case-study-outcome">
+              <span class="case-study-metric">~$1M/yr</span> cost reduction · Processing thousands of events daily · 50% faster turnaround
+            </p>
+          </article>
+
+          <article class="case-study">
+            <div class="case-study-label">API Infrastructure</div>
+            <h3>Configuration-as-code API gateway</h3>
+            <p class="case-study-desc">
+              <strong>Problem:</strong> Manual API gateway configuration was slow, error-prone, and difficult to audit.
+            </p>
+            <p class="case-study-desc">
+              <strong>Solution:</strong> Architected configuration-as-code deployment of Tyk gateway with CI/CD testing to safely expose APIs while tracking changes.
+            </p>
+            <p class="case-study-outcome">
+              <span class="case-study-metric">Fast &amp; safe</span> API exposure · Version-controlled config · Auditable changes
+            </p>
+          </article>
+
+          <article class="case-study">
+            <div class="case-study-label">Legacy Modernization</div>
+            <h3>SQL Server to service-oriented APIs</h3>
+            <p class="case-study-desc">
+              <strong>Problem:</strong> Mobile field systems couldn't integrate with legacy SQL Server stored procedures. Development velocity stalled.
+            </p>
+            <p class="case-study-desc">
+              <strong>Solution:</strong> Replaced stored procedure logic with well-tested FastAPI services backed by Postgres, exposing clean REST interfaces.
+            </p>
+            <p class="case-study-outcome">
+              <span class="case-study-metric">Mobile-ready</span> APIs · Testable service code · Unblocked mobile team
+            </p>
+          </article>
+
+          <article class="case-study">
+            <div class="case-study-label">Embedded ML</div>
+            <h3>On-device computer vision for defect detection</h3>
+            <p class="case-study-desc">
+              <strong>Problem:</strong> Quality issues weren't caught until late in production, causing expensive rework and delays.
+            </p>
+            <p class="case-study-desc">
+              <strong>Solution:</strong> Deployed OpenCV-based vision system with sensor fusion feeding ML models for real-time defect detection.
+            </p>
+            <p class="case-study-outcome">
+              <span class="case-study-metric">Early detection</span> · Reduced rework costs · Integrated with existing production line
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- CAPABILITIES -->
-    <section id="capabilities" class="section">
+    <section id="capabilities" class="section section-alt">
       <div class="container">
         <div class="section-head">
           <div class="kicker">// capabilities</div>
@@ -122,9 +211,8 @@
             </div>
             <h3>Event-Driven ML Backends</h3>
             <p>
-              Integrate ML inference into event-driven systems, connecting services to existing streaming
-              platforms (Kafka) to route events to models, handle fan-out patterns, and manage throughput
-              and failure modes.
+              Connect ML inference to your existing streaming infrastructure. Route events to models via Kafka,
+              handle fan-out patterns, and manage throughput and failure modes so your AI actually scales.
             </p>
           </article>
 
@@ -134,8 +222,8 @@
             </div>
             <h3>Inference APIs &amp; Microservices</h3>
             <p>
-              Production microservices in FastAPI and Django exposing REST and gRPC interfaces, backed by
-              Postgres, MySQL, and Redis, and integrated with Kafka.
+              Build and deploy production APIs and microservices using FastAPI, Django, REST, and gRPC.
+              Backed by Postgres, MySQL, Redis — integrated with your existing systems.
             </p>
           </article>
 
@@ -145,8 +233,8 @@
             </div>
             <h3>Deployment &amp; Continuous Delivery</h3>
             <p>
-              Deploy backend services with Docker and Kubernetes. Build CI/CD pipelines (Jenkins, Helm) that
-              deliver reproducible builds and reliable rollouts for ML-serving applications.
+              Ship backend services reliably with Docker and Kubernetes. CI/CD pipelines that deliver
+              reproducible builds and safe rollouts for ML-serving applications.
             </p>
           </article>
 
@@ -156,8 +244,8 @@
             </div>
             <h3>Embedded ML &amp; Computer Vision</h3>
             <p>
-              On-device computer vision with OpenCV, embedded data collection, and sensor fusion feeding
-              ML models &mdash; a proven pattern that saved $1M/yr via model inference detecting issues before they became costly.
+              On-device computer vision with OpenCV, embedded data collection, and sensor fusion.
+              Detect issues before they become costly — proven to save $1M/yr in production.
             </p>
           </article>
 
@@ -167,8 +255,8 @@
             </div>
             <h3>Data Migration &amp; Modernization</h3>
             <p>
-              Legacy SQL Server to MySQL/Postgres APIs. Stored procedure logic translated into well-tested
-              service code that integrates cleanly with mobile and web clients.
+              Migrate legacy SQL Server to modern APIs. Translate stored procedure logic into well-tested
+              services that integrate cleanly with mobile and web clients.
             </p>
           </article>
 
@@ -178,9 +266,8 @@
             </div>
             <h3>Test Automation &amp; Verification</h3>
             <p>
-              Design and build automated testing pipelines and verification systems for software and
-              safety-critical hardware: CI-integrated test suites, RF signals, serial protocols, timing,
-              and acceptance review of contractor deliverables.
+              Automated testing pipelines and verification systems for software and safety-critical hardware.
+              CI-integrated test suites, RF signals, serial protocols, and acceptance review.
             </p>
           </article>
 
@@ -190,8 +277,8 @@
             </div>
             <h3>Technical Writing &amp; Proposals</h3>
             <p>
-              Software and test requirements documents, technical proposals, contractor deliverable
-              specifications. Strong written communication is part of the deliverable.
+              Requirements documents, technical proposals, and deliverable specifications.
+              Clear written communication is part of every engagement.
             </p>
           </article>
 
@@ -201,9 +288,19 @@
             </div>
             <h3>Technical Leadership &amp; Mentoring</h3>
             <p>
-              Lead and mentor backend and mobile engineers, including outside contractors. Slot in as
-              architect, scrum master, or senior individual contributor &mdash; whichever shape the
-              engagement needs.
+              Lead and mentor backend and mobile engineers. Slot in as architect, scrum master, or
+              senior IC — whatever shape the engagement needs.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/><path d="M8 9l2 2-2 2M12 13h4"/></svg>
+            </div>
+            <h3>Embedded Linux &amp; OTA Systems</h3>
+            <p>
+              Secure over-the-air update infrastructure for embedded devices. K8s-based deployment
+              with API wrappers and artifact management for safe, auditable fleet updates.
             </p>
           </article>
         </div>
@@ -211,7 +308,7 @@
     </section>
 
     <!-- STACK -->
-    <section id="stack" class="section section-alt">
+    <section id="stack" class="section">
       <div class="container">
         <div class="section-head">
           <div class="kicker">// stack</div>
@@ -291,10 +388,10 @@
     <section id="contact" class="section section-contact">
       <div class="container contact-inner">
         <div class="kicker">// contact</div>
-        <h2>Start a conversation</h2>
+        <h2>Let's ship your project</h2>
         <p class="section-sub">
-          Share a brief description of what you are building, where it is stuck, and your timeline.
-          Replies within one business day.
+          Need senior backend/AI architecture help? Rescuing a stalled deployment? Building production-grade inference systems?
+          Share what you're building, where you could use help, and your timeline. Replies within one business day.
         </p>
         <div class="contact-ctas">
           <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/marc-labelle-codes/" target="_blank" rel="noopener">

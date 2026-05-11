@@ -60,6 +60,53 @@ a:hover { color: var(--accent-soft); }
   mask-image: linear-gradient(to bottom, black, transparent 70%);
 }
 
+/* ---------- Trust Band ---------- */
+.trust-band {
+  background: var(--bg-elev);
+  border-bottom: 1px solid var(--line);
+  padding: 10px 0;
+}
+.trust-band-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+.trust-item {
+  white-space: nowrap;
+}
+.trust-item strong {
+  color: var(--text);
+  font-weight: 600;
+}
+.trust-sep {
+  color: var(--line-strong);
+}
+.trust-avail {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--ok);
+}
+.trust-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ok);
+  box-shadow: 0 0 0 3px rgba(79,178,134,0.15);
+}
+
+@media (max-width: 640px) {
+  .trust-band-inner { font-size: 11px; gap: 8px; }
+  .trust-sep:nth-of-type(2),
+  .trust-sep:nth-of-type(4) { display: none; }
+  .trust-item:nth-of-type(3),
+  .trust-item:nth-of-type(4) { display: none; }
+}
+
 /* ---------- Nav ---------- */
 .nav {
   position: sticky; top: 0; z-index: 50;
@@ -108,7 +155,7 @@ a:hover { color: var(--accent-soft); }
 .contact-inner .contact-ctas .btn { margin-top: 0; }
 
 /* ---------- Hero ---------- */
-.hero { padding: 96px 0 64px; }
+.hero { padding: 64px 0 64px; }
 .pill {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 6px 12px;
@@ -137,7 +184,24 @@ h1 {
   color: var(--text-dim);
   margin: 0 0 32px;
 }
-.cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
+.cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
+
+/* Hero problem tags */
+.hero-problems {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.hero-problem {
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: 6px 12px;
+  background: rgba(217,138,61,0.08);
+  border: 1px solid rgba(217,138,61,0.2);
+  border-radius: 6px;
+  color: var(--accent-soft);
+}
 
 .btn {
   display: inline-flex; align-items: center; justify-content: center;
@@ -209,6 +273,71 @@ h1 {
   font-weight: 700;
 }
 .section-sub { color: var(--text-dim); font-size: 17px; margin: 0; }
+
+/* ---------- Case Studies ---------- */
+.case-studies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (max-width: 1100px) {
+  .case-studies { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .case-studies { grid-template-columns: 1fr; }
+}
+.case-study {
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  transition: border-color 0.15s ease;
+  display: flex;
+  flex-direction: column;
+}
+.case-study-outcome {
+  margin-top: auto;
+}
+.case-study:hover {
+  border-color: var(--line-strong);
+}
+.case-study-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.case-study h3 {
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.case-study-desc {
+  margin: 0 0 10px;
+  color: var(--text-dim);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+.case-study-desc strong {
+  color: var(--text);
+  font-weight: 500;
+}
+.case-study-outcome {
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+.case-study-metric {
+  font-family: var(--mono);
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 14px;
+}
 
 /* ---------- Capability cards ---------- */
 .cards {
